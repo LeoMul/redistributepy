@@ -100,7 +100,9 @@ def main(estimate_num_cpu):
 
         finish = start + int(r) * int(r) -1 
         string = '{:6}{:6}{:6}{:6}\n'
-        dist_dat.write(string.format(start-1,finish-1,int(r),int(r)))
+        string = string.format(start-1,finish-1,int(r),int(r))
+        dist_dat.write(string)
+        print(string.replace('\n',''),symmetries[jj])
     dist_dat.close()
     print('You need {} processors'.format(finish))
 
