@@ -28,7 +28,7 @@ def read_sizeBP():
 
     #detects which symmetries will be opened twice. 
 
-    return size_of_matrix,size_of_matrix_cubed,symmetries
+    return size_of_matrix_cubed,symmetries
 
 def read_sizeH():
     sizeH = open('sizeH.dat','r')
